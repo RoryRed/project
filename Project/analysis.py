@@ -121,3 +121,14 @@ plt.savefig("Iris-virginica Petal Length.png")
 plt.hist(data.virginicapw, rwidth = 0.5)
 plt.title("Iris-virginica Petal Width")
 plt.savefig("Iris-virginica Petal Width.png")
+
+data = pd.read_csv("Data.csv")
+plt.plot(  data.setosapw, data.setosapl, "mo" ,  marker = "o" ,Label= "Iris-Setosa")
+
+plt.xlabel("Petal Width")
+plt.ylabel("Petal Length")
+plt.title(" Iris-setosa Petal Width vs  Petal Length ")
+
+plt.show()
+
+
